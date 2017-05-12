@@ -1,0 +1,28 @@
+# Misc OS and editor files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# General
+log/*.log
+logs/*.log
+
+# Laravel
+Homestead.yaml
+Homestead.json
+vendor/
+.env
+
+# Sublime Text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+
+# Vim
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-v][a-z]
+[._]sw[a-p]
+Session.vim
+tags
