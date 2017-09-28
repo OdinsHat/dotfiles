@@ -2,6 +2,7 @@
     a = add
     b = !git for-each-ref --sort='-authordate' --format='%(authordate)%09%(objectname:short)%09%(refname)' refs/heads | sed -e 's-refs/heads/--'
     c = commit -m
+    changes = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\" --name-status
     cob = checkout -b
     devs = shortlog -n -e -s
     ds = diff --staged
