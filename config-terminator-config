@@ -1,0 +1,139 @@
+# Terminator config should be located in ~/.config/terminator/config
+# The setup below orgamises my Personal Layout for now.
+# Others to follow
+
+[global_config]
+  always_split_with_profile = True
+  dbus = False
+  enabled_plugins = CustomCommandsMenu, InactivityWatch, ActivityWatch, TerminalShot, LaunchpadCodeURLHandler, APTURLHandler, Logger
+  geometry_hinting = True
+  tab_position = bottom
+  title_font = Consolas for Powerline 11
+  title_hide_sizetext = True
+  title_use_system_font = False
+  window_state = maximise
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      profile = New Profile
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+  [[Personal Layout]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_window = True
+      maximised = True
+      order = 0
+      parent = ""
+      position = 0:0
+      size = 1600, 847
+      title = vidar@yggdrasil: ~/Code/odinshat.github.io
+      type = Window
+    [[[child1]]]
+      active_page = 0
+      labels = Personal Blog, My Odin Server, Projects
+      last_active_term = 5ba49bed-547f-4a54-96b5-9393daec7107, 2beaeafa-bf57-49b4-b0b9-8a3f1cd22064, cecb3e3f-2811-4a49-b33d-ec7df7e79026
+      order = 0
+      parent = child0
+      type = Notebook
+    [[[child2]]]
+      order = 0
+      parent = child1
+      position = 797
+      ratio = 0.500313873195
+      type = HPaned
+    [[[child3]]]
+      order = 0
+      parent = child2
+      position = 732
+      ratio = 0.911581569116
+      type = VPaned
+    [[[child6]]]
+      order = 1
+      parent = child2
+      position = 402
+      ratio = 0.500622665006
+      type = VPaned
+    [[[terminal10]]]
+      command = ""
+      directory = ""
+      order = 2
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = cecb3e3f-2811-4a49-b33d-ec7df7e79026
+    [[[terminal4]]]
+      command = cd ~/Code/odinshat.github.io; zsh
+      directory = ~/Code/odinshat.github.io
+      order = 0
+      parent = child3
+      profile = default
+      title = dougbromley blog
+      type = Terminal
+      uuid = 5ba49bed-547f-4a54-96b5-9393daec7107
+    [[[terminal5]]]
+      command = cd ~/Code/odinshat.github.io; hexo server; zsh
+      directory = ~/Code/odinshat.github.io
+      order = 1
+      parent = child3
+      profile = default
+      title = hexo server
+      type = Terminal
+      uuid = 63b9fb31-3dfa-4b8c-ac21-7fd4da00a231
+    [[[terminal7]]]
+      command = cd ~/Code/odinshat.github.io/themes/hexo-theme-paperbox; zsh
+      directory = ~/Code/odinshat.github.io/themes/hexo-theme-paperbox
+      order = 0
+      parent = child6
+      profile = default
+      title = blog theme
+      type = Terminal
+      uuid = caabd1d2-797b-41cb-809e-a8eb41d000f8
+    [[[terminal8]]]
+      command = cd ~/Code; ranger; zsh
+      directory = ~/Code
+      order = 1
+      parent = child6
+      profile = default
+      title = File Manager
+      type = Terminal
+      uuid = 3f5ef140-5a31-4694-966c-258aafd92d2b
+    [[[terminal9]]]
+      command = cd ~/; zsh
+      directory = ~/
+      order = 1
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = 2beaeafa-bf57-49b4-b0b9-8a3f1cd22064
+[plugins]
+[profiles]
+  [[default]]
+    background_color = "#002b36"
+    cursor_color = "#aaaaaa"
+    cursor_shape = underline
+    exit_action = hold
+    font = Consolas for Powerline 11
+    foreground_color = "#839496"
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    scroll_on_output = True
+    scrollback_infinite = True
+    scrollback_lines = 900
+    use_system_font = False
+    visible_bell = True
+  [[Dougs Profile]]
+    background_color = "#002b36"
+    copy_on_selection = True
+    cursor_color = "#aaaaaa"
+    cursor_shape = underline
+    font = Consolas 11
+    foreground_color = "#839496"
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    scroll_on_output = True
+    scrollback_infinite = True
+    use_system_font = False
+    visible_bell = True
