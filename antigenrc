@@ -1,0 +1,26 @@
+# Having the plugins in a seperate file like this apparently speeds up zsh initialisation.
+# See: https://github.com/zsh-users/antigen/wiki/Cookbook#init-command
+
+# Load the oh-my-zsh's library.                                                                                                                                                                       
+antigen use oh-my-zsh                                                           
+                                                                                
+antigen bundle git                                                              
+antigen bundle pip                                                              
+antigen bundle ubuntu                                                           
+antigen bundle zsh-users/zsh-autosuggestions                                    
+antigen bundle zsh-users/zsh-syntax-highlighting                                
+antigen bundle sudo                                                             
+antigen bundle common-aliases                                                   
+antigen bundle djui/alias-tips                                                  
+antigen bundle systemd                                                          
+antigen bundle virtualenv                                                       
+antigen bundle virtualenvwrapper                                                
+antigen bundle vundle                                                           
+                     
+# Some themse left in if I like them. So I can switch to them easily and not have to remember them
+
+#antigen theme blinks                                                           
+antigen theme bureau                                                            
+#antigen theme dallas                                                           
+                                                                                
+antigen apply
