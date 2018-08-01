@@ -1,26 +1,34 @@
 set nocompatible
+filetype off " required for vundle
 
-" Vundle requirements begin
-filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
+
+" let Vundle manage Vundle
+" required! 
 Plugin 'gmarik/Vundle.vim'
 
-Plugin 'vimwiki'
+" Python
 Plugin 'python.vim'
 Plugin 'python.vim--Vasiliev'
 Plugin 'pyflakes.vim'
 Plugin 'pydoc.vim'
 Plugin 'mako.vim'
 Plugin 'mako.vim--Torborg'
+" use :Pydoc keyword to search python docs
 Plugin 'pep8'
 Plugin 'The-NERD-tree'
 Plugin 'taglist.vim'
-call vundle#end()
-filetype plugin indent on
-" Vundle requirements end
+Plugin 'Solarized'
+Plugin 'jwalton512/vim-blade'
+Plugin 'noahfrederick/vim-laravel'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-surround'
+Plugin 'scrooloose/syntastic'
 
-set path+=**
+
+filetype plugin indent on " required for vundle
+
 set number
 set nowrap
 set noerrorbells
@@ -89,8 +97,8 @@ noremap <leader>b :NERDTreeToggle \| :NERDTreeMirror<CR>
 noremap <leader>B :NERDTreeFind<CR>
 map <leader>v :sp ~/.vimrc<cr>
 map <leader>w :w!<cr>
-map <leader>tc :tabclose<CR>
-map <leader>tn :tabnew<CR>
+map <leader>x :tabclose<CR>
+map <leader>n :tabnew<CR>
 
 set notimeout
 if has("autocmd")
@@ -98,3 +106,15 @@ if has("autocmd")
     au BufRead,BufNewFile *.html inoremap <buffer> ;a <a href=""></a><Esc>F"i
     au BufRead,BufNewFile *.html inoremap <buffer> ;i <img src="" alt="" /></a><Esc>3F"i
 endif
+
+" Syntastic Settings
+set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_php_checkers = ['php', 'phpcs']
+let g:syntastic_python_checkers = ['pylint']
