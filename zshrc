@@ -16,7 +16,7 @@ zstyle ':completion:*' list-suffixes true
 zstyle ':completion:*' menu select=1                                               
 zstyle ':completion:*' select-prompt %SScrolling active: current selection at %p%s
 zstyle ':completion:*' verbose true                                                
-zstyle :compinstall filename '/home/leonidas/.zshrc'                               
+zstyle :compinstall filename '~/.zshrc'                               
                                                                                    
 autoload -Uz compinit                                                              
 compinit                                                                           
