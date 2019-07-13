@@ -1,0 +1,158 @@
+# Most of these servers have been decomissioned or shut off.
+# Previous customers, personal server, etc.
+# Kept simply as proof of work done on multiple servers
+# and capable of working with multiple servers.
+
+# Unfortunately I'm having problems finding the Ansible 
+# and Fabric files I used to manage these servers.
+
+HashKnownHosts yes
+
+#
+# Pineapple/Hosted Developments
+#
+Host britannia brit
+  HostName 162.13.44.109
+  Port 50000
+  User root
+  PreferredAuthentications publickey
+  IdentityFile ~/.ssh/id_rsa
+Host etb
+  HostName 162.13.44.109
+  Port 50000
+  User root
+  PreferredAuthentications publickey
+  IdentityFile ~/.ssh/id_rsa
+Host tyrescope ts
+  HostName 162.13.44.109
+  Port 50000
+  User root
+  PreferredAuthentications publickey
+  IdentityFile ~/.ssh/id_rsa
+Host bikers2 dgp driveguard driveguardpoints elite vbk2 bmx bridgestonemx bathwick fbotb battle botb
+  HostName 139.162.197.99
+  Port 50000
+  User root
+  PreferredAuthentications publickey
+  IdentityFile ~/.ssh/id_rsa
+Host ams cust5 bathwick mickextance mick pineapple newfastfit newff buckley duraturn
+  HostName 46.38.167.58
+  Port 50000
+  User root
+  PreferredAuthentications publickey
+  IdentityFile ~/.ssh/id_rsa
+Host newcust5
+  Hostname 139.162.255.202
+  Port 22
+  User root
+  PreferredAuthentications publickey
+  IdentityFile ~/.ssh/id_rsa
+Host cust10
+  HostName 176.58.120.26
+  Port 50000
+  User root
+  PreferredAuthentications publickey
+  IdentityFile ~/.ssh/id_rsa
+Host gloves cust11
+  HostName 178.79.130.99
+  Port 22
+  User root
+  PreferredAuthentications publickey
+  IdentityFile ~/.ssh/id_rsa
+Host aegir pineappledo pdo
+  HostName 146.185.171.51
+  Port 22
+  User root
+  PreferredAuthentications publickey
+  IdentityFile ~/.ssh/id_rsa
+Host linx rewards loyalty bathwickapi bathapi ti tyreintel
+  HostName 212.71.232.166
+  Port 22
+  User root
+  PreferredAuthentications publickey
+  IdentityFile ~/.ssh/id_rsa
+#
+# Kidsnet (my former company that I co-founded and was technical director of)
+#
+Host puky kbs kidsbikeshop
+  HostName 109.74.193.138
+  User root
+  PreferredAuthentications publickey
+  IdentityFile ~/.ssh/id_rsa
+Host ofts twts
+  HostName 146.185.133.141
+  User root
+  Port 1069
+  PreferredAuthentications publickey
+  IdentityFile ~/.ssh/id_rsa
+
+#
+# Personal
+#
+Host seoserviceplace myseosites myseosite seosites
+  HostName 209.250.240.15
+  User root
+  Port 22
+  PreferredAuthentications publickey
+  IdentityFile ~/.ssh/id_rsa
+Host spanishfilms spanishmovies spanishfilm
+  HostName 45.76.137.31
+  User root
+  Port 22
+  PreferredAuthentications publickey
+  IdentityFile ~/.ssh/id_rsa
+Host odin bspartner bridgestonepartner bsp
+  Hostname 139.162.224.112
+  User doug
+  port 22
+  PreferredAuthentications publickey
+  IdentityFile ~/.ssh/id_rsa
+Host mymisc mycentos centos
+  HostName 95.179.236.155
+  User root
+  Port 22
+  PreferredAuthentications publickey
+  IdentityFile ~/.ssh/id_rsa
+Host tyr
+  HostName 212.71.238.191
+  User root
+  Port 22
+  PreferredAuthentications publickey
+  IdentityFile ~/.ssh/id_rsa
+#
+# Other/Misc
+#
+Host github.com
+  HostName github.com
+  User git
+  PreferredAuthentications publickey
+  IdentityFile ~/.ssh/github
+Host firststop fsp fitrststoppartners
+  HostName www.firststoppartners.com
+  User root
+  Port 50000
+  PreferredAuthentications publickey
+  IdentityFile ~/.ssh/id_rsa
+Host kumhomarketing km kumho
+  HostName kumhomarketing.co.uk
+  User root
+  PreferredAuthentications publickey
+  IdentityFile ~/.ssh/id_rsa
+#
+# Home Network
+#
+Host router homerouter gateway ubnt
+  HostName 192.168.2.1
+  User osiris
+#
+# # Home Raspberry Pis
+#
+Host unifi rpitv rpi3tv
+  HostName 192.168.2.112
+  User pi
+Host zero zerow enviro
+  HostName 192.168.2.54
+  User pi
+Host kitchenpi rpi3kitchen
+  HostName 192.168.2.239
+  User pi
